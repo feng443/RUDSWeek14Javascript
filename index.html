@@ -11,7 +11,7 @@
 
     <title>JavaScript and DOM Manipulation</title>
 </head>
-<body onload="fill_data_table(dataSet);">
+<body onload="renderBody(DATA_SET);">
 
 <div class="container">
 
@@ -20,14 +20,19 @@
     <h2>Level 1: Automatic Tzble and Date Search</h2>
 
 
+    <!--
     <form id="search">
         <div class="form-group m-top-75">
             <label for="date_time">Date/Time:</label>
             <input type="text" class="form-control" id="date_time">
+            <label for="city">City</label>
+            <input type="text" class="form-control" id="city">
         </div>
         <button id="submit" class="btn btn-success right">Submit</button>
+    -->
     </form>
 
+    <form id="search">
     <table id="data_table">
         <tr>
             <th>Date/Time</th>
@@ -38,9 +43,18 @@
             <th>Duration Minutes</th>
             <th>Comment</th>
         </tr>
-
+        <tr>
+           <th><input type="text" class="form-control" id="datetime"></th>
+           <th><select id="city"></select></th>
+           <th><select id="state"></select></th>
+           <th><select id="country"></select></th>
+            <th><select id="shape"></select></th>
+            <th></th>
+            <th> <button id="submit" class="btn btn-success right">Submit</button> </th>
+        </tr>
 
     </table>
+    </form>
 
 </div>
 
