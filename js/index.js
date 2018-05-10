@@ -2,13 +2,21 @@
 
 <Chan Feng> 2018-05-10 Rutgers Data Science Bootcamp Assignement 14, JavaScript and DOM Manipulation
 
+TODO:
+1) Progress bar
+2) Reset filter
+3) Option for 'relevent' only filter
+4) Date Picker
+5) CSS table alternative colors, borders
+
 */
 
 var PAGE_NUMBER = 0;
 var COLUMNS = [ 'datetime', 'city', 'state', 'country', 'shape', 'durationMinutes', 'comments', ];
-var OPTION_COLUMNS = [ 'city', 'state', 'country', 'shape', ];
+var OPTION_COLUMNS = [ 'city', 'state', 'country', 'shape', 'durationMinutes'];
 
 // Comment out after testing
+DATA_SET = dataSet;
 DATA_SET = dataSet.slice(1, 100);
 document.getElementById('submit').addEventListener('click', search);
 
