@@ -68,19 +68,12 @@ function matchItem(item, optionValues) {
 /* If input is empty ignore, otherwise look for match */
 function search(event) {
     event.preventDefault();
-    console.log('search called');
     var optionValues = {};
     OPTION_COLUMNS.concat(['datetime']).forEach( col => {
-        // console.log('gather valuess: ' + col);
         var value = document.getElementById(col).value;
-        // console.log('found: ' + value);
         if ( value != '')
             optionValues[col] = value;
     });
-
-    // if (Object.keys(optionValues).length === 0 ) {
-    //    return;
-    //}
 
     var dataSubSet = [];
     DATA_SET.forEach( item => {
