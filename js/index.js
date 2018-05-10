@@ -1,11 +1,6 @@
 /*
 
-
-TODO:
-1) Add reset button for filters and data
-2) Speed up performance by search within sub set
-
-
+<Chan Feng> 2018-05-10 Rutgers Data Science Bootcamp Assignement 14, JavaScript and DOM Manipulation
 
 */
 
