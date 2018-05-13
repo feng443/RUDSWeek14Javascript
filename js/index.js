@@ -2,16 +2,6 @@
 
 <Chan Feng> 2018-05-10 Rutgers Data Science Bootcamp Assignement 14, JavaScript and DOM Manipulation
 
-TODO:
-
-Change to use filter()
-
-1) Progress bar
-2) Reset filter
-3) Option for 'relevent' only filter
-4) Date Picker
-5) CSS table alternative colors, borders
-
 */
 
 var PAGE_NUMBER = 1;
@@ -94,7 +84,6 @@ function search(event) {
     event.preventDefault();
     var optionValues = {};
 
-    // TODO use map()
     OPTION_COLUMNS.concat(['datetime']).forEach( col => {
         var value = document.getElementById(col).value;
         if ( value != '')

@@ -12,7 +12,7 @@ Note: Page size is hard coded to 10. Following enhancement could be added, but w
 ## Code Organization
 
 * [Readme.md](Readme.md)
-* [index.htmol](index.html)
+* [index.html](index.html)
 * css
   * [reset.css](css/reset.css)
   * [style.cs](css/style.css)
