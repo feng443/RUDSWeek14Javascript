@@ -13,8 +13,6 @@ const OPTION_COLUMNS = [ 'city', 'state', 'country', 'shape', 'durationMinutes']
 
 // Comment out after testing
 DATA_SET = dataSet;
-console.log(DATA_SET.length);
-// DATA_SET = dataSet.slice(1, 21);
 DATA_SUBSET = DATA_SET.slice();
 document.getElementById('submit').addEventListener('click', search);
 
@@ -53,8 +51,6 @@ function fillDataTable() {
     if (page_end > DATA_SUBSET.length ) {
         page_end = DATA_SUBSET.length;
     }
-    console.log('page_start: ' + page_start);
-    console.log('page_end: ' + page_end);
 
     for (i = page_start; i < page_end; i++) {
         data = DATA_SUBSET[i];
@@ -118,9 +114,6 @@ function addNavPage(ul, page) {
     var li = document.createElement('li');
     li.setAttribute('class', 'page-item');
 
-    console.log('PAGE_NUMBER: ' + PAGE_NUMBER);
-    console.log('maxPageNumber: ' + maxPageNumber());
-    console.log('page: ' + page);
     var disabled = false;
     if (page == 'Next' && PAGE_NUMBER >= maxPageNumber() ||
         page == 'Previous' && PAGE_NUMBER == 1 ||
@@ -129,7 +122,6 @@ function addNavPage(ul, page) {
         disabled = true;
     }
     if ( page == PAGE_NUMBER.toString()){
-        console.log('set active: '+ page);
         li.setAttribute('class', 'page-item active');
     }
     li.appendChild(a);
