@@ -62,7 +62,7 @@ function fillDataTable() {
     }
 
     document.getElementById('page_start').innerText = page_start + 1;
-    document.getElementById('page_end').innerText = page_end + 1;
+    document.getElementById('page_end').innerText = page_end;
     document.getElementById('max_number').innerText = DATA_SUBSET.length;
 }
 
