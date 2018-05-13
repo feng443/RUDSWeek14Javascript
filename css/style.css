@@ -1,0 +1,17 @@
+.pagination-centered {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+th {
+    color: white;
+    background-color: grey;
+    font-weight: bold;
+}
+
+#page-position #page_start #page_end #max_number {
+    display: inline;
+}
